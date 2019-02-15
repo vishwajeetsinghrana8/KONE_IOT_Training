@@ -1,0 +1,1 @@
+https://docs.aws.amazon.com/iot/latest/developerguide/managing-device-certs.html

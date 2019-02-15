@@ -1,0 +1,21 @@
+Installing Flask
+pi@raspberrypi ~ $ sudo apt-get update
+pi@raspberrypi ~ $ sudo apt-get install python-pip python-flask
+pi@raspberrypi ~ $ sudo pip install flask
+
+Creating the Python Script
+pi@raspberrypi ~ $ mkdir web-server
+pi@raspberrypi ~ $ cd web-server
+pi@raspberrypi:~/web-server $
+pi@raspberrypi:~/web-server $ nano app.py
+
+
+Creating the HTML File
+pi@raspberrypi:~/web-server $ mkdir templates
+pi@raspberrypi:~/web-server $ cd templates
+pi@raspberrypi:~/web-server/templates $
+pi@raspberrypi:~/web-server/templates $ nano main.html
+
+Launching the Web Server
+pi@raspberrypi:~/web-server/templates $ cd ..
+pi@raspberrypi:~/web-server $ sudo python app.py

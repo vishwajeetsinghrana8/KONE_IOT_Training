@@ -1,0 +1,19 @@
+Step-1  sudo nano /boot/config.txt
+	
+enable_uart=1
+
+sudo reboot
+
+Step-2 sudo systemctl stop serial-getty@ttyS0.service
+
+Step-3 sudo systemctl disable serial-getty@ttyS0.service
+
+Step-4 sudo nano /boot/cmdline.txt
+
+Remove : console=serial0,115200
+
+Step-5 sudo nano /boot/config.txt
+
+dtoverlay=pi3-miniuart-bt
+
+sudo reboot
